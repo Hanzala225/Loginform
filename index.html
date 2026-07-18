@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modern Sign Up Form</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#4CAF50,#2196F3);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:20px;
+}
+
+.container{
+    width:100%;
+    max-width:550px;
+    background:#fff;
+    border-radius:15px;
+    padding:35px;
+    box-shadow:0 15px 35px rgba(0,0,0,.2);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:30px;
+    color:#333;
+}
+
+.section{
+    margin-bottom:30px;
+}
+
+.section-title{
+    display:flex;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.circle{
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    background:#4CAF50;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:bold;
+    margin-right:12px;
+}
+
+.section-title h2{
+    color:#333;
+}
+
+label{
+    display:block;
+    margin:15px 0 8px;
+    font-weight:bold;
+    color:#444;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+textarea,
+select{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:15px;
+    transition:.3s;
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+    border-color:#4CAF50;
+    outline:none;
+    box-shadow:0 0 8px rgba(76,175,80,.3);
+}
+
+textarea{
+    resize:vertical;
+    min-height:90px;
+}
+
+.radio-group,
+.checkbox-group{
+    margin-top:10px;
+}
+
+.radio-group label,
+.checkbox-group label{
+    display:inline-block;
+    margin-right:20px;
+    font-weight:normal;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    background:#4CAF50;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:17px;
+    cursor:pointer;
+    margin-top:20px;
+    transition:.3s;
+}
+
+button:hover{
+    background:#43a047;
+    transform:translateY(-2px);
+}
+
+@media(max-width:600px){
+    .container{
+        padding:25px;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>Create Account</h1>
+
+<div class="section">
+
+<div class="section-title">
+<div class="circle">1</div>
+<h2>Your Basic Info</h2>
+</div>
+
+<label>Name</label>
+<input type="text" placeholder="Enter your name">
+
+<label>Email</label>
+<input type="email" placeholder="Enter your email">
+
+<label>Password</label>
+<input type="password" placeholder="Enter your password">
+
+<label>Age</label>
+
+<div class="radio-group">
+<input type="radio" id="under13" name="age">
+<label for="under13">Under 13</label>
+
+<input type="radio" id="over13" name="age">
+<label for="over13">13 and Older</label>
+</div>
+
+</div>
+
+<div class="section">
+
+<div class="section-title">
+<div class="circle">2</div>
+<h2>Your Profile</h2>
+</div>
+
+<label>Biography</label>
+<textarea placeholder="Tell us something about yourself"></textarea>
+
+<label>Job Role</label>
+<select>
+<option>Business Owner</option>
+<option>Developer</option>
+<option>Designer</option>
+<option>Student</option>
+<option>Manager</option>
+<option>Other</option>
+</select>
+
+<label>Interests</label>
+
+<div class="checkbox-group">
+<input type="checkbox" id="development">
+<label for="development">Development</label>
+
+<input type="checkbox" id="design">
+<label for="design">Design</label>
+
+<input type="checkbox" id="business">
+<label for="business">Business</label>
+</div>
+
+</div>
+
+<button>Sign Up</button>
+
+</div>
+
+</body>
+</html>
